@@ -4,9 +4,12 @@
     {
         static void Main(string[] args)
         {
-           
+            
             MainPage();
         }
+        
+        
+        
         private static void MainPage()
         {
             Console.WriteLine("...Welcome Turkish Plate Center...");
@@ -39,6 +42,7 @@
 
 
         }
+    
         private static string yourPlate()
         {
 
@@ -91,6 +95,11 @@
             }
 
         }
+
+        /// <summary>
+        /// 1 to 81 random create number.
+        /// </summary>
+        /// <returns></returns>
         private static string[] CityNumber()
         {
             string[] plateTurkish = new string[3];
