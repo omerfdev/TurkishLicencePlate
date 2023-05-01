@@ -91,6 +91,11 @@
             }
 
         }
+        
+        /// <summary>
+        /// 1 to 81 random create number.
+        /// </summary>
+        /// <returns></returns>              
         private static string[] CityNumber()
         {
             string[] plateTurkish = new string[3];
