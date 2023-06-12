@@ -4,12 +4,9 @@
     {
         static void Main(string[] args)
         {
-            
             MainPage();
         }
-        
-        
-        
+
         private static void MainPage()
         {
             Console.WriteLine("...Welcome Turkish Plate Center...");
@@ -42,10 +39,8 @@
 
 
         }
-    
         private static string yourPlate()
         {
-
             Console.WriteLine("Please Enter Your Turkish Licence Plate");
             string yourPlate = Console.ReadLine().ToUpper();
             return yourPlate;
@@ -95,7 +90,7 @@
             }
 
         }
-        
+
         /// <summary>
         /// 1 to 81 random create number.
         /// </summary>
@@ -109,6 +104,11 @@
             else plateTurkish[0] = cityNumber.ToString();
             return plateTurkish;
         }
+        /// <summary>
+        ///Gives middle characters
+        /// </summary>
+        /// <param name="plateTurkish"></param>
+        /// <returns></returns>
         private static string[] MiddleCharacter(string[] plateTurkish)
         {
             Random rnd = new Random();
@@ -121,6 +121,12 @@
             plateTurkish[1] = middleCharacter;
             return plateTurkish;
         }
+
+        /// <summary>
+        /// Gives last numbers
+        /// </summary>
+        /// <param name="plateTurkish"></param>
+        /// <returns></returns>
         private static string[] LastNumber(string[] plateTurkish)
         {
             Random rnd = new Random();
